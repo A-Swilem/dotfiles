@@ -16,35 +16,7 @@ alias rmdir='rmdirtrash'
 alias cat="bat"
 
 # Package management
-alias un='sudo apt remove'
-alias up='sudo apt update && sudo apt upgrade'
-alias al='apt list --installed'
-alias as='apt search'
-alias pc='sudo apt autoremove'
-alias ao='sudo apt autoremove'
-alias update="sudo dnf update"
-alias upgrade="sudo dnf upgrade"
-alias install="sudo dnf install"
-alias remove="sudo dnf remove"
-alias si="snap install"
 alias bri="brew install"
-
-# pnpm commands
-alias pn="pnpm"
-alias pns="pnpm start"
-alias pni="pnpm i"
-alias pna="pnpm add"
-alias pnr="pnpm rm"
-alias pnu="pnpm up"
-alias pnd="pnpm dev"
-
-# bun commands
-alias bs="bun start"
-alias bd="bun dev"
-alias ba="bun add"
-alias bi="bun i"
-alias bu="bun update"
-alias br="bun remove"
 
 # Git commands
 alias gt="git"
@@ -59,8 +31,8 @@ alias gtP="git push"
 
 # Neovim and code editor commands
 alias v="nvim"
-alias rc="v ~/.bashrc"
-alias zrc="v ~/.zshrc"
+alias rc="code ~/.bashrc"
+alias zrc="code ~/.zshrc"
 alias c.="code ."
 alias ff="fzf --preview 'bat --color=always {}' --preview-window '~3' | xargs -I {} nvim {}"
 
